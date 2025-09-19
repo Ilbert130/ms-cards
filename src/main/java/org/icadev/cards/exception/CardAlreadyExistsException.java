@@ -1,4 +1,4 @@
-package org.icadev.cards.entity.exception;
+package org.icadev.cards.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

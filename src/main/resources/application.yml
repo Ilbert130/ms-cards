@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9000
 spring:
   datasource:
     url: jdbc:h2:mem:cards
@@ -14,3 +14,23 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  config:
+    import:
+      - application_qa.yml
+      - application_prod.yml
+  #    To activate a profile, uncomment the line below
+  #    We use the "active" property to activate a profile
+  profiles:
+    active: qa
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to the Cards Microservice local API"
+  contactDetails:
+    name: "Ilbert Castillo"
+    email: "ilbert@gmail.com"
+  onCallSupport:
+    - (849) 555-1212
+    - (849) 555-1213

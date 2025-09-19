@@ -12,6 +12,7 @@
     <artifactId>cards</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cards</name>
+    <packaging>jar</packaging>
     <description>cards</description>
     <url/>
     <licenses>
@@ -97,6 +98,16 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.6</version>
+                <configuration>
+                    <to>
+                        <image>ilbertca26/${project.artifactId}:s6</image>
+                    </to>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,4 +1,4 @@
-package org.icadev.cards.entity.exception;
+package org.icadev.cards.exception;
 
 import jakarta.validation.ConstraintViolationException;
 import org.icadev.cards.dto.ErrorResponseDto;

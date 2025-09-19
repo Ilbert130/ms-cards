@@ -1,12 +1,12 @@
 package org.icadev.cards.service.impl;
 
-import lombok.AllArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 import org.icadev.cards.constants.CardsConstants;
 import org.icadev.cards.dto.CardsDto;
 import org.icadev.cards.entity.Cards;
-import org.icadev.cards.entity.exception.CardAlreadyExistsException;
-import org.icadev.cards.entity.exception.ResourceNotFoundException;
+import org.icadev.cards.exception.CardAlreadyExistsException;
+import org.icadev.cards.exception.ResourceNotFoundException;
 import org.icadev.cards.mapper.CardsMapper;
 import org.icadev.cards.repository.CardsRepository;
 import org.icadev.cards.service.ICardsService;
